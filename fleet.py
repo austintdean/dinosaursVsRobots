@@ -2,24 +2,18 @@
 
 
 from robot import Robot
+from weapon import Weapon
 
 
 class Fleet :
     def __init__(self) -> None:
-        self.robots = [Robot("One"),Robot("Two"),Robot("Three")]
-      
-    def create_fleet(self):
-        make_fleet = True
-        while make_fleet is True:
-            for robot in self.robots:
-                print(f'this is {robot.name}')
+        self.fleet = [Robot("Megazord", Weapon("sword", 100 )),Robot('Iron Giant', Weapon("spear", 100)),Robot('biltzcrank', Weapon("extendo fist", 100)),]
         
-    
 
-start_work = Fleet()
+    def create_fleet(self, robot_object):
+        self.fleet.append(robot_object)
+        print(f'Added {robot_object.name} the fleet!')
 
-start_work.create_fleet 
 
-for robot in start_work.robots:
-    print(robot.name)
-        
+
+ 
