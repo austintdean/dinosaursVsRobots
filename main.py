@@ -15,6 +15,6 @@ from battlefield import Battlefield
 # fleet_main = Fleet()
 battleground = Battlefield()
 
-battleground.run_game()
+print(battleground.display_winners())
 
 
